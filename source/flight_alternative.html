@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flight | Travel Agency</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta charset="utf-8" /><link rel="icon" href="favicon.png" />
+  <meta content="eTravel.flights.searches.new" name="js-namespace">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+  <link href="css/calendar.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/jquery.ui.css">
+  <link rel="stylesheet" href="css/jquery.formstyler.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/stylish.css" />
+  <script src="https://use.fontawesome.com/cc4dc78774.js"></script>
+</head>
+<body>
+<!-- // authorize // -->
+ <div class="overlay"></div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+      <div class="modal-dialog">
+  <div class="autorize-popup">
+    <div class="autorize-tabs">
+      <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" class="autorize-tab-a" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration" class="autorize-tab-b" data-toggle="tab">Click Here To Register</a></li>
+                            <a href="#" class="autorize-close"></a>
+                        </ul>
+
+      <div class="clear"></div>
+    </div>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="Login">
+    <section class="autorize-tab-content">
+      <div class="autorize-padding">
+      <div>
+          <a href="#" class="btnf btn-social btn-facebook"><i class="ff fa fa-facebook"></i> Login with Facebook</a>
+          <a href="#" class="btnf btn-social btn-google" style="float:right;"><i class="ga fa fa-google"></i> Login with Google</a>
+
+          </div>
+
+        <h6 class="autorize-lbl">Log in with your FareSlash account</h6>
+        <input type="text" value="" placeholder="Email address">
+        <input type="text" value="" placeholder="Password">
+        <footer class="autorize-bottom">
+          <button class="authorize-btn">Login</button>
+          <a href="#" class="authorize-forget-pass">Forgot your password?</a>
+          <div class="clear"></div>
+
+
+        </footer>
+      </div>
+    </section>
+    </div>
+
+    <div class="tab-pane" id="Registration">
+    <section class="autorize-tab-content">
+      <div class="autorize-padding">
+        <h6 class="autorize-lbl">Register for a FareSlash account</h6>
+        <input type="text" value="" placeholder="First Name">
+        <input type="text" value="" placeholder="Last Name">
+        <input type="text" value="" placeholder="Email">
+        <input type="text" value="" placeholder="Password">
+        <footer class="autorize-bottom">
+          <button class="authorize-btn">Register</button>
+          <div class="clear"></div>
+        </footer>
+      </div>
+    </section>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+<!-- \\ authorize \\-->
+
+<header id="top">
+  <div class="header-a">
+    <div class="wrapper-padding">
+      <div class="header-phone"><span>1 - 555 - 555 - 555</span></div>
+      <div class="header-account">
+        <a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
+      </div>
+      <div class="header-viewed">
+        <a href="#" class="header-viewed-btn">Recent Searches</a>
+        <!-- // viewed drop // -->
+          <div class="viewed-drop">
+            <div class="viewed-drop-a">
+              <!-- // -->
+              <div class="viewed-item">
+                <div class="viewed-item-l">
+                  <a href="#"><img alt="" src="img/v-item-01.jpg" /></a>
+                </div>
+                <div class="viewed-item-r">
+                  <div class="viewed-item-lbl"><a href="#">Lagos - London</a></div>
+                  <div class="viewed-item-cat">27, Jan, 2017</div>
+                  <div class="viewed-price">N458,000</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- \\ -->
+              <!-- // -->
+              <div class="viewed-item">
+                <div class="viewed-item-l">
+                  <a href="#"><img alt="" src="img/v-item-02.jpg" /></a>
+                </div>
+                <div class="viewed-item-r">
+                  <div class="viewed-item-lbl"><a href="#">South Africa - Paris</a></div>
+                  <div class="viewed-item-cat">18, Feb, 2018</div>
+                  <div class="viewed-price">N32,000</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- \\ -->
+              <!-- // -->
+              <div class="viewed-item">
+                <div class="viewed-item-l">
+                  <a href="#"><img alt="" src="img/v-item-03.jpg" /></a>
+                </div>
+                <div class="viewed-item-r">
+                  <div class="viewed-item-lbl"><a href="#">Abuja - Canada</a></div>
+                  <div class="viewed-item-cat">1, Nov, 2017</div>
+                  <div class="viewed-price">N310,000</div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- \\ -->
+            </div>
+          </div>
+        <!-- \\ viewed drop \\ -->
+      </div>
+      <div class="header-lang">
+        <a href="#"><img alt="" src="img/en.gif" /></a>
+        <div class="langs-drop">
+          <div><a href="#" class="langs-item en">english</a></div>
+          <div><a href="#" class="langs-item fr">francais</a></div>
+          <div><a href="#" class="langs-item de">deutsch</a></div>
+          <div><a href="#" class="langs-item it">italiano</a></div>
+        </div>
+      </div>
+      <div class="header-curency">
+        <a href="#">USD</a>
+        <div class="curency-drop">
+          <div><a href="#">usd</a></div>
+          <div><a href="#">Eur</a></div>
+          <div><a href="#">GBR</a></div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="header-b" style="height: 60px;">
+    <!-- // mobile menu // -->
+      <div class="mobile-menu">
+        <nav>
+          <ul>
+            <li><a href="about.html">About Us</a>
+            </li>
+            <li><a href="#">Blog</a>
+            </li>
+            <li><a href="about.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    <!-- \\ mobile menu \\ -->
+
+    <div class="wrapper-padding">
+      <div class="header-logo"><a href="index.html"><img alt="" src="img/logo.png" /></a></div>
+      <div class="header-right">
+        <div class="hdr-srch">
+          <a href="#" class="hdr-srch-btn"></a>
+        </div>
+        <div class="hdr-srch-overlay">
+          <div class="hdr-srch-overlay-a">
+            <input type="text" value="" placeholder="Start typing...">
+            <a href="#" class="srch-close"></a>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div class="hdr-srch-devider"></div>
+        <a href="#" class="menu-btn"></a>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="about.html">About Us</a>
+            </li>
+            <li><a href="#">Blog</a>
+            </li>
+            <li><a href="about.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+
+<!-- main-cont -->
+<div class="main-cont" style="background-color: #211a3e">
+  <div class="body-wrapper" style="padding-top: 100px;">
+    <div class="wrapper-padding">
+    <div class="page-head">
+      <div class="clear"></div>
+    </div>
+    <div class="col-md-12 no-padding">
+      <div class="col-md-3 no-padding ">
+
+        <div class="srch-results-lbl fly-in">
+          <span>Search Complete<br><small>230 results found</small></span>
+        </div>
+
+        <div class="side-block fly-in">
+          <div class="side-block-search">
+
+          </div>
+        </div>
+
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-price">
+            <div class="side-padding">
+              <div class="side-lbl">Price</div>
+              <div class="price-ranger">
+                <div id="slider-range"></div>
+              </div>
+              <div class="price-ammounts">
+                <input type="text" id="ammount-from" readonly>
+                <input type="text" id="ammount-to" readonly>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- \\ side \\ -->
+
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-stars">
+            <div class="side-padding">
+              <div class="side-lbl">Airlines</div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Lufthansa (30)
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  United Airlines (18)
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Air berlin (8)
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Swiss (2)
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Turkish Airlines (1)
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Air france (1)
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- \\ side \\ -->
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-stars">
+            <div class="side-padding">
+              <div class="side-lbl">Flight type</div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Business
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  First class
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="" />
+                  Economy
+                </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- \\ side \\ -->
+        <!-- // side // -->
+        <div class="side-block fly-in">
+          <div class="side-stars">
+            <div class="side-padding">
+              <div class="side-lbl">Flight times</div>
+
+              <div class="side-time-holder">
+                <div class="side-lbl-a">Departure flight</div>
+                <div class="side-time">
+                  <div class="time-ammounts">
+                    departure time <span class="time-from">0</span>:00 up to <span class="time-to">0</span>:00
+                  </div>
+                  <div class="time-ranger">
+                    <div class="time-range"></div>
+                  </div>
+                </div>
+                <div class="side-time">
+                  <div class="time-ammounts">
+                    arrival time <span class="time-from">0</span>:00 up to <span class="time-to">0</span>:00
+                  </div>
+                  <div class="time-ranger">
+                    <div class="time-range"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="side-time-holder">
+                <div class="side-lbl-a">return flight</div>
+                <div class="side-time">
+                  <div class="time-ammounts">
+                    departure time <span class="time-from">0</span>:00 up to <span class="time-to">0</span>:00
+                  </div>
+                  <div class="time-ranger">
+                    <div class="time-range"></div>
+                  </div>
+                </div>
+                <div class="side-time">
+                  <div class="time-ammounts">
+                    arrival time <span class="time-from">0</span>:00 up to <span class="time-to">0</span>:00
+                  </div>
+                  <div class="time-ranger">
+                    <div class="time-range"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- \\ side \\ -->
+
+      </div>
+      <div class="col-md-9">
+        <div class="two-colls-right-b">
+          <div class="padding">
+
+            <div class="catalog-head fly-in">
+              <label>Sort results by:</label>
+              <div class="search-select">
+    							<select>
+    								<option>Name</option>
+    								<option>Name</option>
+    								<option>Name</option>
+    								<option>Name</option>
+    								<option>Name</option>
+    							</select>
+    					</div>
+              <div class="search-select">
+    							<select>
+    								<option>Price</option>
+    								<option>Price</option>
+    								<option>Price</option>
+    								<option>Price</option>
+    								<option>Price</option>
+    							</select>
+    					</div>
+              <div class="search-select">
+    							<select>
+    								<option>Duration</option>
+    								<option>Duration</option>
+    								<option>Duration</option>
+    								<option>Duration</option>
+    								<option>Duration</option>
+    							</select>
+    					</div>
+              <a href="#" class="show-list"></a>
+			  <a class="show-thumbs chosen" href="#"></a>
+              <div class="clear"></div>
+            </div>
+
+            <div class="catalog-row alternative">
+
+				<!-- // flight-item // -->
+              <div class="flight-item fly-in">
+                <div class="flt-i-a">
+                  <div class="flt-i-b">
+
+                    <div class="flt-i-bb">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">departure</div>
+                        <div class="company"><img alt="" src="img/flyght-01.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">TUE 06/01 New York - Viena</div>
+                            <!-- // -->
+                           <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+                            <b>Departure</b>
+                            <span>14:12</span>
+                          </div>
+                          <div class="alt-data-i alt-arrival">
+                            <b>Arrival</b>
+                            <span>17:50</span>
+                          </div>
+                          <div class="alt-data-i alt-time">
+                            <b>Time</b>
+                            <span>14H 50M</span>
+                          </div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 3 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+  <div class="SegmentBox">
+    <div class="SegmentHeader">
+      <span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+    </div>
+    <div class="SegmentBoxInner">
+       <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+      <div class="SegmentLeg">
+        <div class="LegLeft">
+          <div class="LegLocations">
+             <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+          </div>
+          <div class="LegTimes">
+             <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+          </div>
+          <div class="LegIcons">
+            <span class="icon-1"></span><span class="icon-1"></span>
+          </div>
+          <div class="legPath">
+            <div class="legConnector">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="greyBubble">
+            <div class="clearfix">
+              <img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+              <div class="legPlane">
+                <span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+              </div>
+              <div class="legFlightTime">
+                <span class="BigTextTime">5h 07m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="SegmentAnother">
+        <div class="legLeft">
+          <div class="legLocations">
+          </div>
+          <div class="legTimes">
+          </div>
+          <div class="legIcons">
+          </div>
+          <div class="legPath">
+            <div class="legWait">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="bubbleRed">
+            <div class="legWaitReason">
+               <span class="legBigText">Change planes</span>
+            </div>
+            <div class="legWaitTime">
+               <span class="BigTextTime">1h 28m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="SegmentLeg">
+        <div class="LegLeft">
+          <div class="LegLocations">
+             <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+          </div>
+          <div class="LegTimes">
+             <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+          </div>
+          <div class="LegIcons">
+            <span class="icon-1"></span><span class="icon-1"></span>
+          </div>
+          <div class="legPath">
+            <div class="legConnector">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="greyBubble">
+            <div class="clearfix">
+              <img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+              <div class="legPlane">
+                <span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+              </div>
+              <div class="legFlightTime">
+                <span class="BigTextTime">12h 20m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="SegmentAnother">
+        <div class="legLeft">
+          <div class="legLocations">
+          </div>
+          <div class="legTimes">
+          </div>
+          <div class="legIcons">
+          </div>
+          <div class="legPath">
+            <div class="legWait">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="bubbleRed">
+            <div class="legWaitReason">
+               <span class="legBigText">Change planes</span>
+            </div>
+            <div class="legWaitTime">
+               <span class="BigTextTime">2h 30m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="SegmentLeg">
+        <div class="LegLeft">
+          <div class="LegLocations">
+             <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span> <span class="LegBigText">Chongqing</span> <span class="LegSmallText">Chongqing</span>
+          </div>
+          <div class="LegTimes">
+             <span class="BigTextTime">18:00</span> <span class="SmallTextTime">Saturday</span> <span class="BigTextTime">21:05</span> <span class="SmallTextTime">Saturday</span>
+          </div>
+          <div class="LegIcons">
+            <span class="icon-1"></span><span class="icon-1"></span>
+          </div>
+          <div class="legPath">
+            <div class="legConnector">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="greyBubble">
+            <div class="clearfix">
+              <img src="img/ca-small.png" alt="Air China" class="legAirline" />
+              <div class="legPlane">
+                <span class="LegBigText">CA4142</span> <span class="SmallTextTime">Air China</span>
+              </div>
+              <div class="legFlightTime">
+                <span class="BigTextTime">3h 05m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="SegmentAnother">
+        <div class="legLeft">
+          <div class="legLocations">
+          </div>
+          <div class="legTimes">
+          </div>
+          <div class="legIcons">
+          </div>
+          <div class="legPath">
+            <div class="legWait">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="bubbleRed">
+            <div class="legWaitReason">
+               <span class="legBigText">Change planes</span>
+            </div>
+            <div class="legWaitTime">
+               <span class="BigTextTime">2h 30m</span>
+            </div>
+          </div>
+        </div>
+      </div><span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+    </div>
+  </div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+
+                    <div class="flt-i-bb flight-return">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">return</div>
+                        <div class="company"><img alt="" src="img/flyght-01.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">WED 07/01 Viena - New York</div>
+
+                            <!-- // -->
+                            <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+                            <b>Departure</b>
+                            <span>14:12</span>
+                          </div>
+                          <div class="alt-data-i alt-arrival">
+                            <b>Arrival</b>
+                            <span>17:50</span>
+                          </div>
+                          <div class="alt-data-i alt-time">
+                            <b>Time</b>
+                            <span>14H 50M</span>
+                          </div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 3 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+  <div class="SegmentBox">
+    <div class="SegmentHeader">
+      <span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+    </div>
+    <div class="SegmentBoxInner">
+       <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+      <div class="SegmentLeg">
+        <div class="LegLeft">
+          <div class="LegLocations">
+             <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+          </div>
+          <div class="LegTimes">
+             <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+          </div>
+          <div class="LegIcons">
+            <span class="icon-1"></span><span class="icon-1"></span>
+          </div>
+          <div class="legPath">
+            <div class="legConnector">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="greyBubble">
+            <div class="clearfix">
+              <img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+              <div class="legPlane">
+                <span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+              </div>
+              <div class="legFlightTime">
+                <span class="BigTextTime">5h 07m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="SegmentAnother">
+        <div class="legLeft">
+          <div class="legLocations">
+          </div>
+          <div class="legTimes">
+          </div>
+          <div class="legIcons">
+          </div>
+          <div class="legPath">
+            <div class="legWait">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="bubbleRed">
+            <div class="legWaitReason">
+               <span class="legBigText">Change planes</span>
+            </div>
+            <div class="legWaitTime">
+               <span class="BigTextTime">1h 28m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="SegmentLeg">
+        <div class="LegLeft">
+          <div class="LegLocations">
+             <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+          </div>
+          <div class="LegTimes">
+             <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+          </div>
+          <div class="LegIcons">
+            <span class="icon-1"></span><span class="icon-1"></span>
+          </div>
+          <div class="legPath">
+            <div class="legConnector">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="greyBubble">
+            <div class="clearfix">
+              <img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+              <div class="legPlane">
+                <span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+              </div>
+              <div class="legFlightTime">
+                <span class="BigTextTime">12h 20m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="SegmentAnother">
+        <div class="legLeft">
+          <div class="legLocations">
+          </div>
+          <div class="legTimes">
+          </div>
+          <div class="legIcons">
+          </div>
+          <div class="legPath">
+            <div class="legWait">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="bubbleRed">
+            <div class="legWaitReason">
+               <span class="legBigText">Change planes</span>
+            </div>
+            <div class="legWaitTime">
+               <span class="BigTextTime">2h 30m</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="SegmentLeg">
+        <div class="LegLeft">
+          <div class="LegLocations">
+             <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span> <span class="LegBigText">Chongqing</span> <span class="LegSmallText">Chongqing</span>
+          </div>
+          <div class="LegTimes">
+             <span class="BigTextTime">18:00</span> <span class="SmallTextTime">Saturday</span> <span class="BigTextTime">21:05</span> <span class="SmallTextTime">Saturday</span>
+          </div>
+          <div class="LegIcons">
+            <span class="icon-1"></span><span class="icon-1"></span>
+          </div>
+          <div class="legPath">
+            <div class="legConnector">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="greyBubble">
+            <div class="clearfix">
+              <img src="img/ca-small.png" alt="Air China" class="legAirline" />
+              <div class="legPlane">
+                <span class="LegBigText">CA4142</span> <span class="SmallTextTime">Air China</span>
+              </div>
+              <div class="legFlightTime">
+                <span class="BigTextTime">3h 05m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="SegmentAnother">
+        <div class="legLeft">
+          <div class="legLocations">
+          </div>
+          <div class="legTimes">
+          </div>
+          <div class="legIcons">
+          </div>
+          <div class="legPath">
+            <div class="legWait">
+            </div>
+          </div>
+        </div>
+        <div class="legFlight">
+          <div class="bubbleRed">
+            <div class="legWaitReason">
+               <span class="legBigText">Change planes</span>
+            </div>
+            <div class="legWaitTime">
+               <span class="BigTextTime">2h 30m</span>
+            </div>
+          </div>
+        </div>
+      </div><span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+    </div>
+  </div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+
+                  </div>
+                </div>
+                <div class="flt-i-c">
+                  <div class="flt-i-padding">
+                    <div class="flt-i-price">634.24$</div>
+                    <div class="flt-i-price-b">avg/person</div>
+                    <a href="#" class="cat-list-btn">select now</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+              <!-- \\ flight-item \\ -->
+
+				<!-- // alt-flight // -->
+				<div class="flight-item fly-in">
+                <div class="flt-i-a">
+                  <div class="flt-i-b">
+                    <div class="flt-i-bb">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">departure</div>
+                        <div class="company"><img alt="" src="img/flyght-02.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">TUE 06/01 New York - Viena</div>
+                            <!-- // -->
+                            <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+    												<b>Departure</b>
+    												<span>14:12</span>
+    											</div>
+    											<div class="alt-data-i alt-arrival">
+    												<b>Arrival</b>
+    												<span>17:50</span>
+    											</div>
+    											<div class="alt-data-i alt-time">
+    												<b>Time</b>
+    												<span>14H 50M</span>
+    											</div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 3 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+	<div class="SegmentBox">
+		<div class="SegmentHeader">
+			<span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+		</div>
+		<div class="SegmentBoxInner">
+			 <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">5h 07m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">1h 28m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">12h 20m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">2h 30m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span> <span class="LegBigText">Chongqing</span> <span class="LegSmallText">Chongqing</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">18:00</span> <span class="SmallTextTime">Saturday</span> <span class="BigTextTime">21:05</span> <span class="SmallTextTime">Saturday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ca-small.png" alt="Air China" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">CA4142</span> <span class="SmallTextTime">Air China</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">3h 05m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">2h 30m</span>
+						</div>
+					</div>
+				</div>
+			</div><span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+		</div>
+	</div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+                  </div>
+                </div>
+
+
+                <div class="flt-i-c">
+                  <div class="flt-i-padding">
+                    <div class="flt-i-price-i">
+                      <div class="flt-i-price">634.24$</div>
+                      <div class="flt-i-price-b">avg/person</div>
+                    </div>
+                    <a href="#" class="cat-list-btn">select now</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+				<!-- \\ alt-flight \\ -->
+
+				<!-- // alt-flight // -->
+					<!-- // alt-flight // -->
+				<div class="flight-item fly-in">
+                <div class="flt-i-a">
+                  <div class="flt-i-b">
+                    <div class="flt-i-bb">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">departure</div>
+                        <div class="company"><img alt="" src="img/flyght-04.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">TUE 06/01 New York - Viena</div>
+                            <!-- // -->
+                            <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+    												<b>Departure</b>
+    												<span>14:12</span>
+    											</div>
+    											<div class="alt-data-i alt-arrival">
+    												<b>Arrival</b>
+    												<span>17:50</span>
+    											</div>
+    											<div class="alt-data-i alt-time">
+    												<b>Time</b>
+    												<span>14H 50M</span>
+    											</div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 2 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+	<div class="SegmentBox">
+		<div class="SegmentHeader">
+			<span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+		</div>
+		<div class="SegmentBoxInner">
+			 <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">5h 07m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">1h 28m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">12h 20m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">2h 30m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+		</div>
+	</div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+                  </div>
+                </div>
+                <div class="flt-i-c">
+                  <div class="flt-i-padding">
+                    <div class="flt-i-price-i">
+                      <div class="flt-i-price">995.14$</div>
+                      <div class="flt-i-price-b">avg/person</div>
+                    </div>
+                    <a href="#" class="cat-list-btn">select now</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+				<!-- \\ alt-flight \\ -->
+
+									<!-- // alt-flight // -->
+				<div class="flight-item fly-in">
+                <div class="flt-i-a">
+                  <div class="flt-i-b">
+                    <div class="flt-i-bb">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">departure</div>
+                        <div class="company"><img alt="" src="img/flyght-05.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">TUE 06/01 New York - Viena</div>
+                            <!-- // -->
+                            <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+    												<b>Departure</b>
+    												<span>14:12</span>
+    											</div>
+    											<div class="alt-data-i alt-arrival">
+    												<b>Arrival</b>
+    												<span>17:50</span>
+    											</div>
+    											<div class="alt-data-i alt-time">
+    												<b>Time</b>
+    												<span>14H 50M</span>
+    											</div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 2 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+	<div class="SegmentBox">
+		<div class="SegmentHeader">
+			<span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+		</div>
+		<div class="SegmentBoxInner">
+			 <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/airlines/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">5h 07m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">1h 28m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/logos/airlines/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">12h 20m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">2h 30m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+		</div>
+	</div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+                  </div>
+                </div>
+                <div class="flt-i-c">
+                  <div class="flt-i-padding">
+                    <div class="flt-i-price-i">
+                      <div class="flt-i-price">995.14$</div>
+                      <div class="flt-i-price-b">avg/person</div>
+                    </div>
+                    <a href="#" class="cat-list-btn">select now</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+				<!-- \\ alt-flight \\ -->
+
+					<!-- // alt-flight // -->
+				<div class="flight-item fly-in">
+                <div class="flt-i-a">
+                  <div class="flt-i-b">
+                    <div class="flt-i-bb">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">departure</div>
+                        <div class="company"><img alt="" src="img/flyght-03.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">TUE 06/01 New York - Viena</div>
+                            <!-- // -->
+                            <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+    												<b>Departure</b>
+    												<span>14:12</span>
+    											</div>
+    											<div class="alt-data-i alt-arrival">
+    												<b>Arrival</b>
+    												<span>17:50</span>
+    											</div>
+    											<div class="alt-data-i alt-time">
+    												<b>Time</b>
+    												<span>14H 50M</span>
+    											</div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 2 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+	<div class="SegmentBox">
+		<div class="SegmentHeader">
+			<span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+		</div>
+		<div class="SegmentBoxInner">
+			 <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">5h 07m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">1h 28m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">12h 20m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">2h 30m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+		</div>
+	</div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+                  </div>
+                </div>
+                <div class="flt-i-c">
+                  <div class="flt-i-padding">
+                    <div class="flt-i-price-i">
+                      <div class="flt-i-price">995.14$</div>
+                      <div class="flt-i-price-b">avg/person</div>
+                    </div>
+                    <a href="#" class="cat-list-btn">select now</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+				<!-- \\ alt-flight \\ -->
+
+									<!-- // alt-flight // -->
+				<div class="flight-item fly-in">
+                <div class="flt-i-a">
+                  <div class="flt-i-b">
+                    <div class="flt-i-bb">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">departure</div>
+                        <div class="company"><img alt="" src="img/flyght-04.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">TUE 06/01 New York - Viena</div>
+                            <!-- // -->
+                            <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+    												<b>Departure</b>
+    												<span>14:12</span>
+    											</div>
+    											<div class="alt-data-i alt-arrival">
+    												<b>Arrival</b>
+    												<span>17:50</span>
+    											</div>
+    											<div class="alt-data-i alt-time">
+    												<b>Time</b>
+    												<span>14H 50M</span>
+    											</div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 2 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+	<div class="SegmentBox">
+		<div class="SegmentHeader">
+			<span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+		</div>
+		<div class="SegmentBoxInner">
+			 <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">5h 07m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">1h 28m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">12h 20m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">2h 30m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+		</div>
+	</div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+                  </div>
+                </div>
+                <div class="flt-i-c">
+                  <div class="flt-i-padding">
+                    <div class="flt-i-price-i">
+                      <div class="flt-i-price">995.14$</div>
+                      <div class="flt-i-price-b">avg/person</div>
+                    </div>
+                    <a href="#" class="cat-list-btn">select now</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+				<!-- \\ alt-flight \\ -->
+
+									<!-- // alt-flight // -->
+				<div class="flight-item fly-in">
+                <div class="flt-i-a">
+                  <div class="flt-i-b">
+                    <div class="flt-i-bb">
+                    <div class="flt-l-a">
+                      <div class="flt-l-b">
+                        <div class="way-lbl">departure</div>
+                        <div class="company"><img alt="" src="img/flyght-01.png"></div>
+                      </div>
+                      <div class="flt-l-c">
+                        <div class="flt-l-cb">
+                          <div class="flt-l-c-padding">
+                            <div class="flyght-info-head">TUE 06/01 New York - Viena</div>
+                            <!-- // -->
+                            <div class="flight-line">
+                              <div class="alt-data-i alt-departure">
+    												<b>Departure</b>
+    												<span>14:12</span>
+    											</div>
+    											<div class="alt-data-i alt-arrival">
+    												<b>Arrival</b>
+    												<span>17:50</span>
+    											</div>
+    											<div class="alt-data-i alt-time">
+    												<b>Time</b>
+    												<span>14H 50M</span>
+    											</div>
+                              <div class="flight-line-b">
+                                <b>details</b>
+                                <span> 2 stops!</span>
+                              </div>
+                              <div class="clear"></div>
+                                <!-- // details // -->
+                            <div class="flight-details">
+                                  <div class="outbound">
+	<div class="SegmentBox">
+		<div class="SegmentHeader">
+			<span class="SegmentTitle">Indianapolis - Chongqing <span>17. February 2017</span></span>
+		</div>
+		<div class="SegmentBoxInner">
+			 <span class="SegmentDate">Departs: <strong>Friday</strong> 17. February 2017</span>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">Indianapolis</span> <span class="LegSmallText">Indianapolis Intl</span> <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">07:35</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">09:42</span> <span class="SmallTextTime">Friday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">5h 07m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">1h 28m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="SegmentLeg">
+				<div class="LegLeft">
+					<div class="LegLocations">
+						 <span class="LegBigText">San Francisco</span> <span class="LegSmallText">San Francisco Intl</span> <span class="LegBigText">Beijing</span> <span class="LegSmallText">Capital Airport</span>
+					</div>
+					<div class="LegTimes">
+						 <span class="BigTextTime">11:10</span> <span class="SmallTextTime">Friday</span> <span class="BigTextTime">15:30</span> <span class="SmallTextTime">Saturday</span>
+					</div>
+					<div class="LegIcons">
+						<span class="icon-1"></span><span class="icon-1"></span>
+					</div>
+					<div class="legPath">
+						<div class="legConnector">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="greyBubble">
+						<div class="clearfix">
+							<img src="img/ua-small.png" alt="United Airlines" class="legAirline" />
+							<div class="legPlane">
+								<span class="LegBigText">UA500</span> <span class="SmallTextTime">United Airlines</span>
+							</div>
+							<div class="legFlightTime">
+								<span class="BigTextTime">12h 20m</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="SegmentAnother">
+				<div class="legLeft">
+					<div class="legLocations">
+					</div>
+					<div class="legTimes">
+					</div>
+					<div class="legIcons">
+					</div>
+					<div class="legPath">
+						<div class="legWait">
+						</div>
+					</div>
+				</div>
+				<div class="legFlight">
+					<div class="bubbleRed">
+						<div class="legWaitReason">
+							 <span class="legBigText">Change planes</span>
+						</div>
+						<div class="legWaitTime">
+							 <span class="BigTextTime">2h 30m</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<span class="SegmentDuration">Total flight time: <strong>24h 30m</strong></span> <span class="SegmentDate legWarning">Arrives: <strong>Saturday</strong> 18. February 2017</span>
+		</div>
+	</div>
+</div>
+                                  <div class="clear"></div>
+                                </div>
+                                <!-- \\ details \\ -->
+                            </div>
+                            <!-- \\ -->
+                          </div>
+                        </div>
+                        <br class="clear" />
+                      </div>
+                    </div>
+                    <div class="clear"></div>
+                    </div>
+                    <br class="clear" />
+                  </div>
+                </div>
+                <div class="flt-i-c">
+                  <div class="flt-i-padding">
+                    <div class="flt-i-price-i">
+                      <div class="flt-i-price">995.14$</div>
+                      <div class="flt-i-price-b">avg/person</div>
+                    </div>
+                    <a href="#" class="cat-list-btn">select now</a>
+                  </div>
+                </div>
+                <div class="clear"></div>
+              </div>
+				<!-- \\ alt-flight \\ -->
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="pagination">
+              <a class="active" href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+        <br class="clear" />
+      </div>
+    </div>
+    <div class="clear"></div>
+
+    </div>
+  </div>
+</div>
+<!-- /main-cont -->
+
+<footer class="footer-a">
+	<div class="wrapper-padding">
+		<div class="section">
+			<div class="footer-lbl">Company</div>
+				<ul class="footer-side">
+				<li class="footer-adress">About</li>
+				<li class="footer-adress">Careers</li>
+				<li class="footer-adress">Terms of Use</li>
+				<li class="footer-adress">Contact Us</li>
+				</ul>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Top Countries</div>
+				<ul class="footer-side">
+				<li class="footer-adress">UAE</li>
+				<li class="footer-adress">Spain</li>
+				<li class="footer-adress">United States</li>
+				<li class="footer-adress">Brazil</li>
+				</ul>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Top Cities</div>
+				<ul class="footer-side">
+				<li class="footer-adress">Dubai</li>
+				<li class="footer-adress">Paris</li>
+				<li class="footer-adress">New York</li>
+				<li class="footer-adress">London</li>
+				</ul>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Top Airlines</div>
+				<ul class="footer-side">
+				<li class="footer-adress">Emirates</li>
+				<li class="footer-adress">Lufthansa</li>
+				<li class="footer-adress">United Airlines</li>
+				<li class="footer-adress">Qatar Airways</li>
+				</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+</footer>
+
+<footer class="footer-b">
+	<div class="wrapper-padding">
+		<div class="footer-left">Fareslash Ltd  ©  2017
+ All rights reserved.</div> <br>
+		<div class="footer-social">
+			<a href="#" class="footer-twitter"></a>
+			<a href="#" class="footer-facebook"></a>
+			<a href="#" class="footer-vimeo"></a>
+			<a href="#" class="footer-pinterest"></a>
+			<a href="#" class="footer-instagram"></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</footer>
+
+<!-- // scripts // -->
+  <script src="js/jquery.1.7.1.js"></script>
+  <script src="js/jqeury.appear.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.formstyler.js"></script>
+  <script src="js/custom.select.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/twitterfeed.js"></script>
+  <script>
+
+  	$(document).ready(function(){
+  	  $('.date-inpt').datepicker();
+      $('.custom-select').customSelect();
+      (function($) {
+        $(function() {
+          $('input:checkbox,input:radio,.search-engine-range-selection-container input:radio').styler();
+        })
+      })(jQuery);
+      $(function() {
+        $( "#slider-range" ).slider({
+          range: true,
+          min: 0,
+          max: 1500,
+          values: [ 275, 1100 ],
+          slide: function( event, ui ) {
+            $("#ammount-from").val(ui.values[0]+'$');
+            $("#ammount-to").val(ui.values[1]+'$');
+          }
+        });
+        $("#ammount-from").val($("#slider-range").slider("values",0)+'$');
+        $("#ammount-to").val($("#slider-range").slider("values",1)+'$');
+      });
+
+        $(".side-time").each(function(){
+          var $this = $(this);
+          $this.find('.time-range').slider({
+              range: true,
+              min: 0,
+              max: 24,
+              values: [ 3, 20 ],
+              slide: function( event, ui ) {
+                $this.find(".time-from").text(ui.values[0]);
+                $this.find(".time-to").text(ui.values[1]);
+              }
+          });
+
+          $(this).find(".time-from").text($this.find(".time-range").slider("values",0));
+          $(this).find(".time-to").text($this.find(".time-range").slider("values",1));
+
+        });
+
+  		$(function() {
+    			$(document.body).on('appear', '.fly-in', function(e, $affected) {
+      			$(this).addClass("appeared");
+    			});
+    			$('.fly-in').appear({force_process: true});
+  		});
+  	});
+  </script>
+<!-- \\ scripts \\ -->
+
+</body>
+</html>
+<!-- Localized -->

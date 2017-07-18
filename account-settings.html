@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FareSlash | Travel Agency</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta charset="utf-8" /><link rel="icon" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/idangerous.swiper.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/stylish.css" />
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:300,400,500,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://use.fontawesome.com/cc4dc78774.js"></script>
+  <style type="text/css">
+    body {
+    margin: 0;
+    color: #524c61;
+    font-family: "Larseeit",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}#content-wrap {
+    margin: 20px auto;
+}
+
+#content-wrap .primary {
+    height: auto;
+    line-height: 30px;
+    display: block;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: #35353f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    min-width: 140px;
+    float: left;
+    margin: 0 8px 10px 0;
+    position: static;
+}
+.account-settings-management form button {
+    cursor: pointer;
+    outline: 0;
+    border-color: transparent;
+    border-radius: 5px;
+    min-width: 125px;
+    height: 40px;
+    font-family: 'Arial Bold',Arial;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #333;
+    background: #eaebeb;
+}
+
+
+.wrap {
+    margin: 0 auto;
+    width: 1048px;
+}
+.wrap {
+    position: relative;
+}
+.clearfix::before {
+    content: '';
+    display: table;
+}
+nav {
+    display: block;
+}
+.uas-nav ol {
+    width: 25%;
+    margin: 0 20px 0 0;
+    padding: 0;
+    border-top: 1px solid #85899a;
+    float: left;
+}
+
+.uas-nav li {
+    padding: 5px 0;
+    list-style: none;
+    border-bottom: 1px solid #85899a;
+}
+.uas-nav a {
+    display: block;
+    padding: 8px 0;
+    font-weight: 700;
+    text-decoration: none;
+    color: #0061ab;
+}
+
+.uas-nav a:hover {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+.uas-nav a.manage:before {
+    background-position: 5px -285px;
+}
+
+.uas-nav a.subscriptions:before {
+    background-position: 4px -352px;
+}
+
+.uas-nav a:before {
+    background: url(sprite-1.png) no-repeat;
+    width: 35px;
+    height: 25px;
+    content: '';
+    float: left;
+}
+.uas-nav a.price-alerts:before {
+    background-position: 5px -220px;
+}
+article {
+    display: block;
+}
+
+#content-wrap article {
+    overflow: hidden;
+}
+.account-settings-management h3 {
+    font-size: 2.3em;
+}
+.hidden {
+    display: none!important;
+}
+
+.account-settings-management section {
+    border-bottom: 1px solid #eaebeb;
+    margin: 0 0 12px;
+}
+
+.account-settings-management h4 {
+    margin: 12px 0 0;
+    padding: 12px;
+    background: #e9eaef;
+    border-radius: 5px 5px 0 0;
+    font-size: 1.5em;
+    font-family: "LarseeitBold"
+}
+.account-settings-management form {
+    border-left: 1px solid #eaebeb;
+    border-right: 1px solid #eaebeb;
+}
+
+.account-settings-management fieldset {
+    overflow: visible;
+    border: none;
+    border-top: 1px solid #eaebeb;
+    padding: 10px 1.25%;
+}
+fieldset {
+    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+}
+.account-settings-management fieldset legend {
+    float: left;
+    width: 35.25%;
+    font-size: 1.25em;
+    border-bottom: none !important;
+}
+.legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+
+}
+
+.account-settings-management fieldset ol {
+    float: left;
+    width: 64%;
+    margin: 0;
+    padding: 0;
+}
+
+.account-settings-management fieldset li {
+    list-style: none;
+    margin: 0 0 10px;
+}
+
+.account-settings-management input[type=text] {
+    display: block;
+    outline: 0;
+    padding: 8px 2%;
+    border: 1px solid #eaebeb;
+    border-radius: 3px;
+    width: 95%;
+    font-size: 1.25em;
+    margin: -4px 0 0;
+}
+
+.account-settings-management input:not([type=range])+output {
+    display: none;
+    color: #fff;
+    line-height: 1.4em;
+    position: relative;
+    margin: 8px 0;
+    font-size: 95%;
+    font-style: normal;
+    font-weight: 700;
+    padding: 8px 12px;
+    background: #f23939;
+}
+
+.account-settings-management fieldset li {
+    list-style: none;
+    margin: 0 0 10px;
+}
+
+.account-settings-management fieldset {
+    overflow: visible;
+    border: none;
+    border-top: 1px solid #eaebeb;
+    padding: 10px 1.25%;
+}
+
+.account-settings-management fieldset {
+    overflow: visible;
+    border: none;
+    border-top: 1px solid #eaebeb;
+    padding: 10px 1.25%;
+}
+
+.account-settings-management a {
+    color: #10acc9;
+    cursor: pointer;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.account-settings-management a:hover {
+    color: #000;
+    cursor: pointer;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+
+.account-settings-management .ac-tooltip {
+    color: #b2aebd;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #b2aebd;
+}
+
+.account-settings-management .ac-tooltip span {
+    position: absolute;
+    bottom: 21px;
+    display: block;
+    visibility: hidden;
+    width: 300px;
+    background-color: #252033;
+    border-radius: 6px;
+    color: #fff;
+    padding: 8px;
+    word-wrap: break-word;
+}
+
+.account-settings-management footer a {
+    float: right;
+    margin: 0 0 0 20px;
+}
+
+</style>
+</head>
+<body>
+<!-- // authorize // -->
+
+
+    <div class="overlay"></div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" >
+            <div class="modal-dialog">
+    <div class="autorize-popup">
+        <div class="autorize-tabs">
+            <!-- Nav tabs -->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#Login" class="autorize-tab-a" data-toggle="tab">Login</a></li>
+                            <li><a href="#Registration" class="autorize-tab-b" data-toggle="tab">Click Here To Register</a></li>
+                            <a href="#" class="autorize-close"></a>
+                        </ul>
+
+            <div class="clear"></div>
+        </div>
+
+        <div class="tab-content">
+        <div class="tab-pane active" id="Login">
+        <section class="autorize-tab-content">
+            <div class="autorize-padding">
+            <div>
+                    <a href="#" class="btnf btn-social btn-facebook"><i class="ff fa fa-facebook"></i> Login with Facebook</a>
+                    <a href="#" class="btnf btn-social btn-google" style="float:right;"><i class="ga fa fa-google"></i> Login with Google</a>
+
+                    </div>
+
+                <h6 class="autorize-lbl">Log in with your FareSlash account</h6>
+                <input type="text" value="" placeholder="Email address">
+                <input type="text" value="" placeholder="Password">
+                <footer class="autorize-bottom">
+                    <button class="authorize-btn">Login</button>
+                    <a href="#" class="authorize-forget-pass">Forgot your password?</a>
+                    <div class="clear"></div>
+
+
+                </footer>
+            </div>
+        </section>
+        </div>
+
+        <div class="tab-pane" id="Registration">
+        <section class="autorize-tab-content">
+            <div class="autorize-padding">
+                <h6 class="autorize-lbl">Register for a FareSlash account</h6>
+                <input type="text" value="" placeholder="First Name">
+                <input type="text" value="" placeholder="Last Name">
+                <input type="text" value="" placeholder="Email">
+                <input type="text" value="" placeholder="Password">
+                <footer class="autorize-bottom">
+                    <button class="authorize-btn">Register</button>
+                    <div class="clear"></div>
+                </footer>
+            </div>
+        </section>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+<!-- \\ authorize \\-->
+
+<header id="top">
+    <div class="header-a">
+        <div class="wrapper-padding">
+            <div class="header-phone"><span>1 - 555 - 555 - 555</span></div>
+            <div class="header-account">
+                <a href="#" data-toggle="modal" data-target="#myModal">Sign in</a>
+            </div>
+            <div class="header-viewed">
+                <a href="#" class="header-viewed-btn">Recent Searches</a>
+                <!-- // viewed drop // -->
+                    <div class="viewed-drop">
+                        <div class="viewed-drop-a">
+                            <!-- // -->
+                            <div class="viewed-item">
+                                <div class="viewed-item-l">
+                                    <a href="#"><img alt="" src="img/v-item-01.jpg" /></a>
+                                </div>
+                                <div class="viewed-item-r">
+                                    <div class="viewed-item-lbl"><a href="#">Lagos - London</a></div>
+                                    <div class="viewed-item-cat">27, Jan, 2017</div>
+                                    <div class="viewed-price">N458,000</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- \\ -->
+                            <!-- // -->
+                            <div class="viewed-item">
+                                <div class="viewed-item-l">
+                                    <a href="#"><img alt="" src="img/v-item-02.jpg" /></a>
+                                </div>
+                                <div class="viewed-item-r">
+                                    <div class="viewed-item-lbl"><a href="#">South Africa - Paris</a></div>
+                                    <div class="viewed-item-cat">18, Feb, 2018</div>
+                                    <div class="viewed-price">N32,000</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- \\ -->
+                            <!-- // -->
+                            <div class="viewed-item">
+                                <div class="viewed-item-l">
+                                    <a href="#"><img alt="" src="img/v-item-03.jpg" /></a>
+                                </div>
+                                <div class="viewed-item-r">
+                                    <div class="viewed-item-lbl"><a href="#">Abuja - Canada</a></div>
+                                    <div class="viewed-item-cat">1, Nov, 2017</div>
+                                    <div class="viewed-price">N310,000</div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <!-- \\ -->
+                        </div>
+                    </div>
+                <!-- \\ viewed drop \\ -->
+            </div>
+            <div class="header-lang">
+                <a href="#"><img alt="" src="img/en.gif" /></a>
+                <div class="langs-drop">
+                    <div><a href="#" class="langs-item en">english</a></div>
+                    <div><a href="#" class="langs-item fr">francais</a></div>
+                    <div><a href="#" class="langs-item de">deutsch</a></div>
+                    <div><a href="#" class="langs-item it">italiano</a></div>
+                </div>
+            </div>
+            <div class="header-curency">
+                <a href="#">USD</a>
+                <div class="curency-drop">
+                    <div><a href="#">usd</a></div>
+                    <div><a href="#">Eur</a></div>
+                    <div><a href="#">GBR</a></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header-b" style="height: 60px;">
+        <!-- // mobile menu // -->
+            <div class="mobile-menu">
+                <nav>
+                    <ul>
+                        <li><a href="about.html">About Us</a>
+                        </li>
+                        <li><a href="#">Blog</a>
+                        </li>
+                        <li><a href="about.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        <!-- \\ mobile menu \\ -->
+
+        <div class="wrapper-padding">
+            <div class="header-logo"><a href="index.html"><img alt="" src="img/logo.png" /></a></div>
+            <div class="header-right">
+                <div class="hdr-srch">
+                    <a href="#" class="hdr-srch-btn"></a>
+                </div>
+                <div class="hdr-srch-overlay">
+                    <div class="hdr-srch-overlay-a">
+                        <input type="text" value="" placeholder="Start typing...">
+                        <a href="#" class="srch-close"></a>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="hdr-srch-devider"></div>
+                <a href="#" class="menu-btn"></a>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="about.html">About Us</a>
+                        </li>
+                        <li><a href="#">Blog</a>
+                        </li>
+                        <li><a href="about.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</header>
+
+
+<!-- main-cont -->
+<div class="main-cont">
+	<div class="mp-slider search-only">
+
+	</div>
+
+	<div class="wrapper-a-holder full-width-search">
+	<div class="wrapper-a">
+
+
+
+		<!-- \\ search \\ -->
+
+		<div class="clear"></div>
+	 </div>
+	</div>
+	</div>
+
+	<div class="container">
+	<div id="content-wrap" class="wrap">
+<nav class="uas-nav">
+    <ol>
+        <li><a class="manage" href="#">Account Settings</a></li>
+        <li><a class="price-alerts" href="#">Price Alerts</a></li>
+        <li><a class="subscriptions" href="#">Subscriptions</a></li>
+    </ol>
+</nav>
+
+<article class="account-settings-management"><h3>Account Settings</h3>
+<p class="notification"><em class="hidden"></em></p>
+<section class="account-settings-management">
+    <h4>Account basics</h4>
+<form><fieldset>
+    <legend>Email address</legend>
+    <ol>
+        <li>
+            <input id="ac-email" type="text" value="" placeholder="Enter email address">
+            <output id="ac-email-validate"></output>
+        </li>
+    </ol>
+</fieldset>
+<fieldset class="hidden buttons">
+    <legend>Save your changes</legend>
+    <button class="primary">Save</button>
+    <button class="cancel">Cancel</button>
+</fieldset></form><form><fieldset>
+    <legend>Password</legend>
+    <a class="change-password">Change your password</a>
+    <ol class="hidden">
+        <li>
+            <input id="ac-old-password" type="password" value="" placeholder="Current password" autocomplete="off">
+            <output id="ac-old-password-validate"></output>
+        </li>
+        <li>
+            <input id="ac-new-password" type="password" value="" placeholder="New password">
+            <output id="ac-new-password-validate"></output>
+        </li>
+        <li>
+            <input id="ac-confirm-password" type="password" value="" placeholder="Confirm your new password">
+            <output id="ac-confirm-password-validate"></output>
+        </li>
+    </ol>
+</fieldset>
+<fieldset class="hidden buttons">
+    <legend>Save your changes</legend>
+    <button class="primary">Save</button>
+    <button class="cancel">Cancel</button>
+</fieldset></form></section>
+<section class="ac-profile">
+    <h4>Build Your Profile</h4>
+<form><fieldset>
+    <legend>Name</legend>
+    <ol>
+        <li>
+            <input id="ac-first-name" type="text" placeholder="Enter first name">
+            <output id="ac-first-name-validate"></output>
+        </li>
+        <li>
+            <input id="ac-last-name" type="text" placeholder="Enter last name">
+            <output id="ac-last-name-validate"></output>
+        </li>
+    </ol>
+</fieldset>
+<fieldset>
+    <legend>Culture Preferences</legend>
+    <ol>
+        <li >
+            <a>English (United Kingdom)</a>
+            <select class="hidden"><option value="en-gb">English (United Kingdom)</option></select>
+        </li>
+        <li >
+            <a>United Kingdom</a>
+            <select class="hidden"><option value="uk">United Kingdom</option></select>
+        </li>
+    </ol>
+</fieldset>
+<fieldset class="hidden buttons">
+    <legend>Save your changes</legend>
+    <button class="primary">Save</button>
+    <button class="cancel">Cancel</button>
+</fieldset></form></section>
+<section class="ac-preferences">
+    <h4>Search Preferences</h4>
+<form><fieldset>
+    <legend>Home airport</legend>
+    <ol>
+        <li>
+            <input id="home-airport" type="text" placeholder="" autocomplete="off"><ul class="autocomplete"></ul>
+            <output id="home-airport-id"></output>
+        </li>
+    </ol>
+</fieldset>
+<fieldset id="max-price-fieldset"><legend>Budget</legend>
+<ol>
+    <li>
+        <input id="max-price-range" name="max-price" type="range" max="500" min="50" step="50" value="100">
+        <output id="max-price-label" for="max-price">£100</output>
+    </li>
+</ol>
+<p id="max-price-tooltip" class="ac-tooltip">What's this?<span>Use the slider to set your maximum budget for return flight offers via email. If there are no flights available within this budget, we'll send you the next cheapest fare.</span></p>
+</fieldset>
+<fieldset class="buttons">
+    <legend>Save your changes</legend>
+    <button class="primary">Save</button>
+    <button class="cancel">Cancel</button>
+</fieldset>
+</form></section>
+<footer>
+    <a class="#">Delete Account</a>
+    <a href="#">Unsubscribe from newsletters</a>
+</footer></article>
+    </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- /main-cont -->
+
+
+
+
+<footer class="footer-a">
+	<div class="wrapper-padding">
+		<div class="section">
+			<div class="footer-lbl">Company</div>
+				<ul class="footer-side">
+				<li class="footer-adress">About</li>
+				<li class="footer-adress">Careers</li>
+				<li class="footer-adress">Terms of Use</li>
+				<li class="footer-adress">Contact Us</li>
+				</ul>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Top Countries</div>
+				<ul class="footer-side">
+				<li class="footer-adress">UAE</li>
+				<li class="footer-adress">Spain</li>
+				<li class="footer-adress">United States</li>
+				<li class="footer-adress">Brazil</li>
+				</ul>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Top Cities</div>
+				<ul class="footer-side">
+				<li class="footer-adress">Dubai</li>
+				<li class="footer-adress">Paris</li>
+				<li class="footer-adress">New York</li>
+				<li class="footer-adress">London</li>
+				</ul>
+		</div>
+		<div class="section">
+			<div class="footer-lbl">Top Airlines</div>
+				<ul class="footer-side">
+				<li class="footer-adress">Emirates</li>
+				<li class="footer-adress">Lufthansa</li>
+				<li class="footer-adress">United Airlines</li>
+				<li class="footer-adress">Qatar Airways</li>
+				</ul>
+		</div>
+	</div>
+	<div class="clear"></div>
+</footer>
+
+<footer class="footer-b">
+	<div class="wrapper-padding">
+		<div class="footer-left">Fareslash Ltd  ©  2017
+ All rights reserved.</div> <br>
+		<div class="footer-social">
+			<a href="#" class="footer-twitter"></a>
+			<a href="#" class="footer-facebook"></a>
+			<a href="#" class="footer-vimeo"></a>
+			<a href="#" class="footer-pinterest"></a>
+			<a href="#" class="footer-instagram"></a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</footer>
+
+<!-- // scripts // -->
+  <script src="js/jquery.1.7.1.js"></script>
+  <script src="js/idangerous.swiper.js"></script>
+  <script src="js/slideInit.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bxSlider.js"></script>
+  <script src="js/jqeury.appear.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/custom.select.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/twitterfeed.js"></script>
+  <script>
+  	$(document).ready(function(){
+  	$('.date-inpt').datepicker();
+  	$('.custom-select').customSelect();
+    $slideHover();
+		$(function() {
+  			$(document.body).on('appear', '.fly-in', function(e, $affected) {
+    			$(this).addClass("appeared");
+  			});
+  			$('.fly-in').appear({force_process: true});
+		});
+
+    	$('#testimonials-slider').bxSlider({
+        	infiniteLoop: true,
+        	speed: 600,
+        	minSlides: 1,
+        	maxSlides: 1,
+        	moveSlides: 1,
+        	auto: false,
+        	slideMargin: 0
+    	});
+
+     	$(".owl-slider").owlCarousel({
+    		loop:true,
+    		margin:28,
+    		responsiveClass:true,
+    		responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        620:{
+            items:2,
+            nav:true
+        },
+        900:{
+            items:3,
+            nav:false
+        },
+        1120:{
+            items:4,
+            nav:true,
+            loop:false
+        }
+    	}
+		});
+
+		$slideHover();
+
+  	});
+  </script>
+<!-- \\ scripts \\ -->
+
+</body>
+</html>
+<!-- Localized -->
